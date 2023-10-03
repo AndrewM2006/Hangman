@@ -74,7 +74,7 @@ namespace Hangman
                                 }
                             } while (key.Key != ConsoleKey.Enter);
                             Console.WriteLine();
-                            word=word.ToUpper();
+                            word=word.ToUpper().Trim();
                             if (Regex.IsMatch(word, @"^[a-zA-Z]+$"))
                             {
                                 valid = true;
